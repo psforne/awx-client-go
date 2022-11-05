@@ -10,53 +10,53 @@ import (
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/psforne/awx-client-go/awx/client/activity_streams"
-	"github.com/psforne/awx-client-go/awx/client/ad_hoc_command_events"
-	"github.com/psforne/awx-client-go/awx/client/ad_hoc_commands"
-	"github.com/psforne/awx-client-go/awx/client/authentication"
-	"github.com/psforne/awx-client-go/awx/client/credential_input_sources"
-	"github.com/psforne/awx-client-go/awx/client/credential_types"
-	"github.com/psforne/awx-client-go/awx/client/credentials"
-	"github.com/psforne/awx-client-go/awx/client/dashboard"
-	"github.com/psforne/awx-client-go/awx/client/execution_environments"
-	"github.com/psforne/awx-client-go/awx/client/groups"
-	"github.com/psforne/awx-client-go/awx/client/hosts"
-	"github.com/psforne/awx-client-go/awx/client/instance_groups"
-	"github.com/psforne/awx-client-go/awx/client/instances"
-	"github.com/psforne/awx-client-go/awx/client/inventories"
-	"github.com/psforne/awx-client-go/awx/client/inventory_sources"
-	"github.com/psforne/awx-client-go/awx/client/inventory_updates"
-	"github.com/psforne/awx-client-go/awx/client/job_events"
-	"github.com/psforne/awx-client-go/awx/client/job_host_summaries"
-	"github.com/psforne/awx-client-go/awx/client/job_templates"
-	"github.com/psforne/awx-client-go/awx/client/jobs"
-	"github.com/psforne/awx-client-go/awx/client/labels"
-	"github.com/psforne/awx-client-go/awx/client/metrics"
-	"github.com/psforne/awx-client-go/awx/client/notification_templates"
-	"github.com/psforne/awx-client-go/awx/client/notifications"
-	"github.com/psforne/awx-client-go/awx/client/organizations"
-	"github.com/psforne/awx-client-go/awx/client/project_updates"
-	"github.com/psforne/awx-client-go/awx/client/projects"
-	"github.com/psforne/awx-client-go/awx/client/roles"
-	"github.com/psforne/awx-client-go/awx/client/schedules"
-	"github.com/psforne/awx-client-go/awx/client/settings"
-	"github.com/psforne/awx-client-go/awx/client/system_configuration"
-	"github.com/psforne/awx-client-go/awx/client/system_job_templates"
-	"github.com/psforne/awx-client-go/awx/client/system_jobs"
-	"github.com/psforne/awx-client-go/awx/client/teams"
-	"github.com/psforne/awx-client-go/awx/client/unified_job_templates"
-	"github.com/psforne/awx-client-go/awx/client/unified_jobs"
-	"github.com/psforne/awx-client-go/awx/client/users"
-	"github.com/psforne/awx-client-go/awx/client/versioning"
-	"github.com/psforne/awx-client-go/awx/client/workflow_approval_templates"
-	"github.com/psforne/awx-client-go/awx/client/workflow_approvals"
-	"github.com/psforne/awx-client-go/awx/client/workflow_job_nodes"
-	"github.com/psforne/awx-client-go/awx/client/workflow_job_template_nodes"
-	"github.com/psforne/awx-client-go/awx/client/workflow_job_templates"
-	"github.com/psforne/awx-client-go/awx/client/workflow_jobs"
+	"github.com/psforne/awx-client-go/client/activity_streams"
+	"github.com/psforne/awx-client-go/client/ad_hoc_command_events"
+	"github.com/psforne/awx-client-go/client/ad_hoc_commands"
+	"github.com/psforne/awx-client-go/client/authentication"
+	"github.com/psforne/awx-client-go/client/credential_input_sources"
+	"github.com/psforne/awx-client-go/client/credential_types"
+	"github.com/psforne/awx-client-go/client/credentials"
+	"github.com/psforne/awx-client-go/client/dashboard"
+	"github.com/psforne/awx-client-go/client/execution_environments"
+	"github.com/psforne/awx-client-go/client/groups"
+	"github.com/psforne/awx-client-go/client/hosts"
+	"github.com/psforne/awx-client-go/client/instance_groups"
+	"github.com/psforne/awx-client-go/client/instances"
+	"github.com/psforne/awx-client-go/client/inventories"
+	"github.com/psforne/awx-client-go/client/inventory_sources"
+	"github.com/psforne/awx-client-go/client/inventory_updates"
+	"github.com/psforne/awx-client-go/client/job_events"
+	"github.com/psforne/awx-client-go/client/job_host_summaries"
+	"github.com/psforne/awx-client-go/client/job_templates"
+	"github.com/psforne/awx-client-go/client/jobs"
+	"github.com/psforne/awx-client-go/client/labels"
+	"github.com/psforne/awx-client-go/client/metrics"
+	"github.com/psforne/awx-client-go/client/notification_templates"
+	"github.com/psforne/awx-client-go/client/notifications"
+	"github.com/psforne/awx-client-go/client/organizations"
+	"github.com/psforne/awx-client-go/client/project_updates"
+	"github.com/psforne/awx-client-go/client/projects"
+	"github.com/psforne/awx-client-go/client/roles"
+	"github.com/psforne/awx-client-go/client/schedules"
+	"github.com/psforne/awx-client-go/client/settings"
+	"github.com/psforne/awx-client-go/client/system_configuration"
+	"github.com/psforne/awx-client-go/client/system_job_templates"
+	"github.com/psforne/awx-client-go/client/system_jobs"
+	"github.com/psforne/awx-client-go/client/teams"
+	"github.com/psforne/awx-client-go/client/unified_job_templates"
+	"github.com/psforne/awx-client-go/client/unified_jobs"
+	"github.com/psforne/awx-client-go/client/users"
+	"github.com/psforne/awx-client-go/client/versioning"
+	"github.com/psforne/awx-client-go/client/workflow_approval_templates"
+	"github.com/psforne/awx-client-go/client/workflow_approvals"
+	"github.com/psforne/awx-client-go/client/workflow_job_nodes"
+	"github.com/psforne/awx-client-go/client/workflow_job_template_nodes"
+	"github.com/psforne/awx-client-go/client/workflow_job_templates"
+	"github.com/psforne/awx-client-go/client/workflow_jobs"
 )
 
-// Default ansible automation platform controller API HTTP client.
+// Default a w x API client HTTP client.
 var Default = NewHTTPClient(nil)
 
 const (
@@ -71,14 +71,14 @@ const (
 // DefaultSchemes are the default schemes found in Meta (info) section of spec file
 var DefaultSchemes = []string{"https"}
 
-// NewHTTPClient creates a new ansible automation platform controller API HTTP client.
-func NewHTTPClient(formats strfmt.Registry) *AnsibleAutomationPlatformControllerAPI {
+// NewHTTPClient creates a new a w x API client HTTP client.
+func NewHTTPClient(formats strfmt.Registry) *AWXAPIClient {
 	return NewHTTPClientWithConfig(formats, nil)
 }
 
-// NewHTTPClientWithConfig creates a new ansible automation platform controller API HTTP client,
+// NewHTTPClientWithConfig creates a new a w x API client HTTP client,
 // using a customizable transport config.
-func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *AnsibleAutomationPlatformControllerAPI {
+func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *AWXAPIClient {
 	// ensure nullable parameters have default
 	if cfg == nil {
 		cfg = DefaultTransportConfig()
@@ -89,14 +89,14 @@ func NewHTTPClientWithConfig(formats strfmt.Registry, cfg *TransportConfig) *Ans
 	return New(transport, formats)
 }
 
-// New creates a new ansible automation platform controller API client
-func New(transport runtime.ClientTransport, formats strfmt.Registry) *AnsibleAutomationPlatformControllerAPI {
+// New creates a new a w x API client client
+func New(transport runtime.ClientTransport, formats strfmt.Registry) *AWXAPIClient {
 	// ensure nullable parameters have default
 	if formats == nil {
 		formats = strfmt.Default
 	}
 
-	cli := new(AnsibleAutomationPlatformControllerAPI)
+	cli := new(AWXAPIClient)
 	cli.Transport = transport
 	cli.ActivityStreams = activity_streams.New(transport, formats)
 	cli.AdHocCommandEvents = ad_hoc_command_events.New(transport, formats)
@@ -184,8 +184,8 @@ func (cfg *TransportConfig) WithSchemes(schemes []string) *TransportConfig {
 	return cfg
 }
 
-// AnsibleAutomationPlatformControllerAPI is a client for ansible automation platform controller API
-type AnsibleAutomationPlatformControllerAPI struct {
+// AWXAPIClient is a client for a w x API client
+type AWXAPIClient struct {
 	ActivityStreams activity_streams.ClientService
 
 	AdHocCommandEvents ad_hoc_command_events.ClientService
@@ -278,7 +278,7 @@ type AnsibleAutomationPlatformControllerAPI struct {
 }
 
 // SetTransport changes the transport on the client and all its subresources
-func (c *AnsibleAutomationPlatformControllerAPI) SetTransport(transport runtime.ClientTransport) {
+func (c *AWXAPIClient) SetTransport(transport runtime.ClientTransport) {
 	c.Transport = transport
 	c.ActivityStreams.SetTransport(transport)
 	c.AdHocCommandEvents.SetTransport(transport)

@@ -3,10 +3,10 @@ deps:
 	go install github.com/go-swagger/go-swagger/cmd/swagger@latest
 
 generate: deps
-	~/go/bin/swagger generate client --target=./awx
+	~/go/bin/swagger generate client --target=.
 
 clean:
-	rm -rf awx/client
+	rm -rf client
 
 integration:
 	go test ./... -tags=integration
