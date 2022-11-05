@@ -5,7 +5,7 @@
   "host": "localhost",
   "info": {
     "description": "",
-    "title": "Ansible Automation Platform controller API",
+    "title": "AWX API Client",
     "version": ""
   },
   "paths": {
